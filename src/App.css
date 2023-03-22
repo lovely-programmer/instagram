@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login__container {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.login__content {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.login__logo {
+  margin-top: 36px;
+}
+
+.login__logo img {
+  width: 174px;
+  height: 51px;
+  object-fit: cover;
+}
+
+.login__content-left {
+  position: relative;
+  flex-basis: 380.32px;
+}
+
+.slideImages {
+  margin-left: 113px;
+  margin-top: 27px;
+}
+
+.slideImages .slide {
+  position: absolute;
+  opacity: 0;
+  transition: 1.5s opacity ease-in;
+  transition-delay: 200ms;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.slideImages img {
+  width: 250px;
+  height: 538.84px;
+}
+
+.login__main {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__content-right {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+}
+
+.login__form {
+  margin: 0 40px 6px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.form__group {
+  margin: 0 40px 6px;
+  border: 1px solid rgb(219, 219, 219);
+  font-size: 14px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 39px;
+  padding: 9px 0 7px 8px;
+}
+
+.form__group label {
+  border: 0;
+  position: absolute;
+  font-size: 12px;
+  color: rgb(142, 142, 142);
+  height: 36px;
+}
+
+.form__group input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.form__group input:valid + label {
+  top: -1px;
+  font-size: 10px;
+}
+
+.form__group input:valid {
+  padding-top: 5px;
+}
+
+.btn {
+  border: none !important;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form__group button {
+  background-color: rgb(0, 149, 246);
+  opacity: 0.7;
+  border: none;
+  font-size: 14px;
+  padding: 7px 16px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.or {
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.or .left {
+  margin-left: 40px;
+  margin-right: 18px;
+}
+
+.or .left + div {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(142, 142, 142);
+}
+
+.or .right {
+  margin-right: 40px;
+  margin-left: 18px;
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(219, 219, 219);
+  flex-grow: 1;
+}
+
+.facebook__login {
+  margin: 12px 40px 6px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook__login img {
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
+}
+
+.facebook__login a {
+  color: #385185;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.forget__password {
+  margin: 12px 40px 6px;
+  text-align: center;
+}
+
+.forget__password a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.dont__have p {
+  margin: 15px;
+  font-size: 14px;
+}
+
+.dont__have p a {
+  text-decoration: none;
+  color: rgb(0, 149, 246);
+  font-weight: 600;
+}
+
+.get__app {
+  display: flex;
+  flex-direction: column;
+}
+
+.get__app .get {
+  text-align: center;
+  margin: 10px 20px 10px 20px;
+  font-size: 14px;
+}
+
+.get__app .app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px 0 10px 0;
+}
+
+.get__app .app a:first-child {
+  margin-right: 8px;
+}
+
+.get__app .app a img {
+  height: 40px;
+}
+
+@media screen and (max-width: 875px) {
+  .login__content-left {
+    display: none;
+  }
+}
